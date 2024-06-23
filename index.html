@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lan="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Survey Form</title>
+		<link rel="stylesheet" href="../SurveyForm/styles.css">
+	</head>
+	<body>
+		<h1 id="title">freeCodeCamp Survey Form</h1>
+		<p id="description">Thank you for taking the time to help us improve the platform</p>
+		<form id="survey-form">
+			<fieldset>
+				<label	for="name" id="name-label">Name <input id="name" type="text" name="name" placeholder="Enter your name" required/></label>
+				<label	for="email" id="email-label">Email <input id="email" type="email" placeholder="Enter your Email" required/></label>
+				<label 	for="number" id="number-label">Age (optional) <input id="number" min=18 max=30 type="number" placeholder="Age" required/></label>
+				<labe 	for="dropdown">
+					Which option best describes your current role?
+					<select id="dropdown">
+						<option>Select current role</option>
+						<option>Student</option>
+						<option>Full Time Job</option>
+						<option>Full Time Learner</option>
+						<option>Prefer not to say</option>
+						<option>Other</option>
+					</select>
+				</label>
+			</fieldset>
+			<fieldset>
+				Would you recommend freeCodeCamp to a friend?
+				<label>
+					Definitely
+					<input class="inline" type="radio" value="Definitely" name ="recommendation" checked/>
+					<div>
+						<label><input class="inline" type="radio" value="Definitely-Yes" name ="nested-recommendation" /> Yes</label>
+						<label><input class="inline" type="radio" value="Definitely-No" name ="nested-recommendation" /> No</label>
+					</div>
+				</label>
+				<label>
+					Maybe
+					<input class="inline" type="radio" value="Maybe" name ="recommendation" />
+					<div>
+						<label><input class="inline" type="radio" value="Maybe-Yes" name ="nested-recommendation" /> Yes</label>
+						<label><input class="inline" type="radio" value="Maybe-No" name ="nested-recommendation" /> No</label>
+					</div>
+				</label>
+				<label>
+					Not sure
+					<input class="inline" type="radio" value="Not sure" name="recommendation"/>
+					<div>
+						<label><input class="inline" type="radio" value="NotSure-Yes" name ="nested-recommendation" /> Yes</label>
+						<label><input class="inline" type="radio" value="NotSure-No" name ="nested-recommendation" /> No</label>
+					</div>
+				</label>
+			</fieldset>
+			<fieldset>
+				What is your favorite feature of freeCodeCamp?
+				<select>
+					<option value="">Select an option</option>
+					<option value="1">Challenges</option>
+					<option value="2">Projects</option>
+					<option value="3">Community</option>
+					<option value="4">Open Source</option>
+				</select>
+			</fieldset>
+			<fieldset>
+				What would you like to see improved? (Check all that apply)
+				<label><input class="inline" id="front-end projects" name="front-end projects" type="checkbox" value="front-end projects" required/> Front-end Projects</label>
+				<label><input class="inline" id="back-end Projects" name="back-end Projects" type="checkbox" value="back-end Projects" required/> Back-end Projects</label>
+				<label><input class="inline" id="data visualization" name="data visualization" type="checkbox" value="data visualization" required/> Data Visualization</label>
+				<label><input class="inline" id="challenges" name="challenges" type="checkbox" value="challenges" required/> Challenges</label>
+				<label><input class="inline" id="open source community" name="open source community" type="checkbox" value="open source community" required/> Open Source Community</label>
+				<label><input class="inline" id="gitter help rooms" name="gitter help rooms" type="checkbox" value="gitter help rooms" required/> Gitter help rooms</label>
+				<label><input class="inline" id="videos" name="videos" type="checkbox" value="videos" required/> Videos</label>
+				<label><input class="inline" id="city meetups" name="city meetups" type="checkbox" value="city meetups" required/> City Meetups</label>
+				<label><input class="inline" id="wiki" name="wiki" type="checkbox" value="wiki" required/> Wiki</label>
+				<label><input class="inline" id="forum" name="forum" type="checkbox" value="forum" required/> Forum</label>
+				<label><input class="inline" id="additional courses" name="additional courses" type="checkbox" value="additional courses" required/> Additional Courses</label>
+			</fieldset>
+			<fieldset>
+				Any comments or suggestions?
+				<textarea placeholder="Enter your comment here"></textarea>
+			</fieldset>
+			<input id="submit" type="submit" value="Submit"/>
+		</form>
+	</body>
+</html>
